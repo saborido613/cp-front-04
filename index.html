@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkpoint 04 - Front-End Design</title>
+
+    <!-- Chamada Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Chamada da CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Chamada da minha CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Chamada dos Icons do Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- ícone na aba do navegador -->
+    <link rel="shortcut icon" href="./images/sacolas-de-compras.png" type="image/x-icon">
+
+</head>
+
+
+<body>
+
+    <header class="container mt-4">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <a class="navbar-brand titulo-menu" href="#">
+                    <i></i>MyShop
+                </a>
+                
+
+                <button class="navbar-toggler" id="btn-menu" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-text-right"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Casual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Masculino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Feminino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Outlet</a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-cart"></i> Carrinho
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-person-circle"></i> Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <section class="row p-4 d-flex align-items-center bg-cinza altura-container">
+            <div class="col-md-6">
+                <h1 class="display-6 text-cinza-escuro">Nova coleção de 2023</h1>
+                <h2 class="display-6">20% OFF para a nova coleção</h2>
+                <a href="#" class="btn btn-outline-dark">Conheça a Coleção</a>
+            </div>
+
+            <div class="col-md-6">
+                <img src="./images/produto-hero.jpg" alt="Imagem de um relógio">
+            </div>
+        </section>
+    </main>
+
+    <section class="container my-4">
+        <h4 class="text-center">Produtos em destaque</h4>
+        
+        <div class="row d-flex align-items-center">
+            <div class="col-md-4 my-2">
+                <img src="./images/cat-img-1.jpg" alt="Imagem de Cadeira e Toalhas" class="img-fluid">
+            </div>
+
+            <div class="col-md-4 my-2">
+                <div class="row">
+                    <div class="col-md-12 my-2">
+                        <img src="./images/cat-img-2.jpg" alt="Tênis Nike Sportwear" class="img-fluid">
+                    </div>
+                    <div class="col-md-12 my-2">
+                        <img src="./images/cat-img-3.jpg" alt="Relógio Timex" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-2">
+                <img src="./images/cat-img-4.jpg" alt="Headphone com fio" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h4 class="text-center">Veja também</h4>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6 my-2 d-flex flex-column justify-content-center">
+                <img src="./images/product-1.jpg" alt="AirPods" class="img-fluid">
+                <a href="#" class="w-60 btn btn-outline-dark my-2 align-self-center justify-content-center">Adicionar ao carrinho</a>
+            </div>
+                
+        
+            <div class="col-lg-3 col-md-6 my-2 d-flex flex-column justify-content-center">
+                <img src="./images/product-2.jpg" alt="Tênis Air Jordan" class="img-fluid">
+                <a href="#" class="w-60 btn btn-outline-dark my-2 align-self-center justify-content-center">Adicionar ao carrinho</a>
+            </div>
+                
+            <div class="col-lg-3 col-md-6 my-2 d-flex flex-column justify-content-center">
+                <img src="./images/product-3.jpg" alt="Camisa Azul Básica" class="img-fluid">
+                <a href="#" class="w-60 btn btn-outline-dark my-2 align-self-center justify-content-center">Adicionar ao carrinho</a>
+            </div>
+        
+            <div class="col-lg-3 col-md-6 my-2 d-flex flex-column justify-content-center">
+                <img src="./images/product-4.jpg" alt="Relógio Timex" class="img-fluid">
+                <a href="#" class="btn btn-outline-dark my-2 d-flex align-self-center justify-content-center w-60">Adicionar ao carrinho</a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 my-2 d-flex flex-column justify-content-center">
+                <img src="./images/product-5.jpg" alt="Relógio Smart" class="img-fluid">
+                <a href="#" class="btn btn-outline-dark my-2 d-flex align-self-center justify-content-center w-60">Adicionar ao carrinho</a>
+            </div>
+                    
+            <div class="col-lg-3 col-md-6 my-2 d-flex flex-column justify-content-center">
+                <img src="./images/product-6.jpg" alt="Tênis Básico" class="img-fluid">
+                <a href="#" class="btn btn-outline-dark my-2 d-flex align-self-center justify-content-center w-60">Adicionar ao carrinho</a>
+            </div>
+                
+            <div class="col-lg-3 col-md-6 my-2 d-flex flex-column justify-content-center">
+                <img src="./images/product-7.jpg" alt="Esmalte Jo Malone" class="img-fluid">
+                <a href="#" class="btn btn-outline-dark my-2 d-flex align-self-center justify-content-center w-60">Adicionar ao carrinho</a>
+            </div>
+        
+            <div class="col-lg-3 col-md-6 my-2 d-flex flex-column justify-content-center">
+                <img src="./images/product-8.jpg" alt="Relógio Smart Nike" class="img-fluid">
+                <a href="#" class="btn btn-outline-dark my-2 d-flex align-self-center justify-content-center w-60">Adicionar ao carrinho</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="container">
+        <h4 class="text-center display-12 my-2">Produto em destaque</h4>
+
+        <div class="row bg-cinza justify-content-around">
+            <div class="col-lg-2 col-md-2 my-2">
+                <div class="row">
+                    <div class="col-6 my-2">
+                        <img src="./images/product-detail-1.jpg" alt="Detalhes do produto em destaque - pulseira vermelha" class="img-fluid">
+                    </div>
+
+                    <div class="col-6 my-2">
+                        <img src="./images/product-detail-2.jpg" alt="Detalhes do produto em destaque - pulseira preta" class="img-fluid">
+                    </div>
+
+                    <div class="col-6 my-2">
+                        <img src="./images/product-detail-3.jpg" alt="Detalhes do produto em destaque - pulseira cinza brilhante" class="img-fluid">
+                    </div>
+
+                    <div class="col-6 my-2">
+                        <img src="./images/product-detail-4.jpg" alt="Detalhes do produto em destaque - pulseira cinza" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 my-4 ">
+                <img src="./images/product-detail-1.jpg" alt="Relógio Smart" class="img-fluid">
+            </div>
+            
+            <div class="col-lg-4 col-md-4 my-4 d-flex">
+                <div class="col-12">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+
+                    <h2>Red Digital Watch</h2>
+                    <h5 class="text-cinza-escuro">R$ 9999.99</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laborum eius numquam et obcaecati commodi?</p>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="btn btn-outline-dark w-50 my-2">Adicionar ao carrinho</a>
+                        <div class="d-flex gap-2 my-2">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-heart"></i> Adicionar a lista de desejos
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section class="p-4 bg-black mt-4 text-light">
+        <h4 class="text-center">Engenharia de Software Checkpoint 04 - 2023</h4>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+            
+
+
+                    
+                
+                    
+
+
+
+
+                
+                
+                
+                
+                
+    
+                
+                
+                
+                
+                
+                
+                
+                    
+
+                    
+
+
+                
+                    
+
+
+
+
+                
+                    
+                    
+                
+                        
+
+
+
+
+
+        
+
+
+
+
+
+            
+
+
+        
+
+
+
+    
+
+                
+
+
+
+
+
+
+
+                       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

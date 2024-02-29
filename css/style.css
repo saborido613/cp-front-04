@@ -1,0 +1,29 @@
+:root {
+    --font-body: 'Heebo', sans-serif;
+    --color-cinza: #F4F5F9;
+    --color-cinza-escuro: #808080;
+    --color-preto: #000000;
+}
+
+body{
+    font-family: var(--font-body);
+}
+
+.bg-cinza {background-color: var(--color-cinza);}
+.bg-black {background-color: var(--color-preto);}
+
+.altura-container { min-height: 80vh;}
+
+.text-cinza-escuro {color: var(--color-cinza-escuro);}
+.text-white {color: var(--color-branco);}
+
+.titulo-menu {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+
